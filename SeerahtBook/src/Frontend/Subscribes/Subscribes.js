@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-export default function Subcribed() {
+export default function Subscribes() {
   return (
     <View>
-      <Text>Subcribed</Text>
+      <Text>Subscribes</Text>
     </View>
   )
 }
