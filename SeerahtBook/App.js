@@ -5,14 +5,11 @@ export default function App() {
   return (
     <View>
       <Text style={{
-        justifyContent: "center",
-        textAlign: "center",
-        color: "White",
-        fontSize: 30,
-        alignContent:"center",
-        alignItems:"center"
+        textAlign:"center",
+        fontSize:40,
+        color:"White"
       }}>
-        Seeraht Book
+        Khatm-e-Nabuwwat
       </Text>
     </View>
   )
