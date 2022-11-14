@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-export default function ContactUs() {
+export default function MoreApps() {
   return (
     <View>
-      <Text>ContactUs</Text>
+      <Text>MoreApps</Text>
     </View>
   )
 }

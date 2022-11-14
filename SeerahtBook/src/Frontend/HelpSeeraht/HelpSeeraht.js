@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-export default function Helpus() {
+export default function HelpSeeraht() {
   return (
     <View>
-      <Text>Helpus</Text>
+      <Text>HelpSeeraht</Text>
     </View>
   )
 }
