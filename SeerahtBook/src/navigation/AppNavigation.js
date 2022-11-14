@@ -24,10 +24,9 @@ const Drawer = createDrawerNavigator();
 export default function AppNavigation() {
     return (
         <NavigationContainer>
-
-
             <Drawer.Navigator initialRouteName="bachonkiNamaz"
             >
+
                 <Drawer.Screen name='bachonkiNamaz' component={Home}
                     options={{
                         headerTitle: "بچیوں کی نماز",
