@@ -1,16 +1,10 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import AppNavigation from './src/navigation/AppNavigation'
 
 export default function App() {
   return (
-    <View>
-      <Text style={{
-        textAlign:"center",
-        fontSize:40,
-        color:"White"
-      }}>
-        Khatm-e-Nabuwwat
-      </Text>
-    </View>
+
+    <AppNavigation />
   )
 }
