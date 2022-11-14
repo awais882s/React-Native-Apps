@@ -13,23 +13,66 @@ import ConnectWithSeeraht from '../Frontend/ConnectWithSeeraht/ConnectWithSeerah
 import AboutSeeraht from '../Frontend/AboutSeeraht/AboutUs'
 import HelpSeeraht from '../Frontend/HelpSeeraht/HelpSeeraht'
 
+
 const Drawer = createDrawerNavigator();
 
 export default function AppNavigation() {
     return (
         <NavigationContainer>
-            <Drawer.Navigator>
-                <Drawer.Screen name='Bachon ki Namaz' component={Home} />
-                <Drawer.Screen name='Buy Now' component={BuyNow} />
-                <Drawer.Screen name='Connect With Seeraht' component={ConnectWithSeeraht} />
-                <Drawer.Screen name='About Seeraht' component={AboutSeeraht} />
-                <Drawer.Screen name='Download' component={Download} />
-                <Drawer.Screen name='Help Seeraht' component={HelpSeeraht} />
-                <Drawer.Screen name='More Apps' component={MoreApps} />
-                <Drawer.Screen name='Subscribe For WhatsApp' component={Subscribes} />
-                <Drawer.Screen name='Share' component={Share} />
-                <Drawer.Screen name='Submit Feedback' component={Feedback} />
-                <Drawer.Screen name='Download Course' component={DownloadCourse} />
+
+
+            <Drawer.Navigator initialRouteName="bachonkiNamaz"
+            >
+                <Drawer.Screen name='bachonkiNamaz' component={Home}
+
+                    options={{
+                        headerTitle: "بچیوں کی نماز",
+                        headerTitleAlign: "center",
+                        title: "Bachon Ki Namaz",
+                    }}
+
+                />
+                <Drawer.Screen name='buyNow' component={BuyNow}
+                    options={{
+                        title: "Buy Now",
+                    }}
+                />
+                <Drawer.Screen name='connectWithSeeraht' component={ConnectWithSeeraht}
+                    options={{
+                        title: "Connect With Seeraht",
+                    }} />
+                <Drawer.Screen name='aboutSeeraht' component={AboutSeeraht}
+                    options={{
+                        title: "About Seeraht",
+                    }} />
+                <Drawer.Screen name='download' component={Download}
+                    options={{
+                        title: "Download",
+                    }} />
+                <Drawer.Screen name='helpSeeraht' component={HelpSeeraht}
+                    options={{
+                        title: "Help Seeraht",
+                    }} />
+                <Drawer.Screen name='moreApps' component={MoreApps}
+                    options={{
+                        title: "More Apps",
+                    }} />
+                <Drawer.Screen name='subscribeForWhatsApp' component={Subscribes}
+                    options={{
+                        title: "Subscribe For WhatsApp",
+                    }} />
+                <Drawer.Screen name='share' component={Share}
+                    options={{
+                        title: "Share",
+                    }} />
+                <Drawer.Screen name='submitFeedback' component={Feedback}
+                    options={{
+                        title: "Submit Feedback",
+                    }} />
+                <Drawer.Screen name='downloadCourse' component={DownloadCourse}
+                    options={{
+                        title: "Download Course",
+                    }} />
 
             </Drawer.Navigator>
         </NavigationContainer>
