@@ -18,7 +18,9 @@ export default function AppNavigation() {
     return (
         <NavigationContainer>
             <Drawer.Navigator>
-                <Drawer.Screen name='Home' component={Home} />
+                <Drawer.Screen name='Home' component={Home} options={{
+                    title: "بچیوں کی نماز"
+                }} />
                 <Drawer.Screen name='AboutUs' component={AboutUs} />
                 <Drawer.Screen name='BuyNow' component={BuyNow} />
                 <Drawer.Screen name='Download' component={Download} />
