@@ -72,7 +72,8 @@ export default function AppNavigation() {
                 />
                 <Drawer.Screen name='ConnectWithSeeraht' component={ConnectWithSeeraht}
                     options={{
-                        title: "Digital Seeraht",
+                        headerTitle:"Digitial Seeraht",
+                        title: "Connect With Seeraht",
                         headerStyle: {
                             backgroundColor: "#9e1f63"
                         },
@@ -179,8 +180,9 @@ export default function AppNavigation() {
                             <MaterialIcons name="feedback" color={color} size={20}
                             />
                         ),
-                    }} 
                     
+                    }} 
+                
                     />
                 <Drawer.Screen name='DownloadCourse' component={DownloadCourse}
                     options={{
