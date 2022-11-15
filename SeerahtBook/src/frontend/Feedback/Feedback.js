@@ -1,10 +1,9 @@
-import { View, Text } from 'react-native'
 import React from 'react'
-
-export default function Feedback() {
+import { Linking } from 'react-native'
+export default FeedBack = () => {
   return (
-    <View>
-      <Text>Feedback</Text>
-    </View>
+
+    Linking.openURL("http://play.google.com/store/apps/details?id=com.seeraht.khatm_e_nabuwwat_course")
+
   )
 }

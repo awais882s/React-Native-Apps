@@ -1,5 +1,5 @@
 import React from 'react'
-import { StatusBar, View } from 'react-native';
+import { StatusBar } from 'react-native';
 import AppNavigation from './src/navigation/AppNavigation';
 
 

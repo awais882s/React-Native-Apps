@@ -146,6 +146,7 @@ export default function AppNavigation() {
                         ),
                     }} />
                 <Drawer.Screen name='Share' component={Share}
+
                     options={{
                         title: "Share",
                         headerStyle: {
@@ -159,7 +160,11 @@ export default function AppNavigation() {
                             <FontAwesome5 name="share-alt" color={color} size={20}
                             />
                         ),
-                    }} />
+
+
+                    }}
+
+                />
                 <Drawer.Screen name='Feedback' component={Feedback}
                     options={{
                         title: "Submit Feedback",
@@ -174,7 +179,9 @@ export default function AppNavigation() {
                             <MaterialIcons name="feedback" color={color} size={20}
                             />
                         ),
-                    }} />
+                    }} 
+                    
+                    />
                 <Drawer.Screen name='DownloadCourse' component={DownloadCourse}
                     options={{
                         title: "Download Course",
