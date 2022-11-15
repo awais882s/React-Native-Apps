@@ -72,7 +72,7 @@ export default function AppNavigation() {
                 />
                 <Drawer.Screen name='ConnectWithSeeraht' component={ConnectWithSeeraht}
                     options={{
-                        title: "Connect With Seeraht",
+                        title: "Digital Seeraht",
                         headerStyle: {
                             backgroundColor: "#9e1f63"
                         },

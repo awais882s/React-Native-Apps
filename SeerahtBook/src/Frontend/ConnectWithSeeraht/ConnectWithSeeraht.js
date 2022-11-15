@@ -1,10 +1,22 @@
-import { View, Text } from 'react-native'
 import React from 'react'
+import { View, Text, StyleSheet, ScrollView } from 'react-native'
 
 export default function ConnectWithSeeraht() {
     return (
-        <View>
-            <Text>ConnectWithSeeraht</Text>
-        </View>
+        <ScrollView>
+            <View style={Styles.facebook}>
+                <Text style={Styles.fb}>FaceBook</Text>
+            </View>
+        </ScrollView>
     )
 }
+
+const Styles = StyleSheet.create({
+    facebook: {
+        textAlign:"center"
+    },
+    fb:{
+        fontSize: 30
+
+    }
+})
