@@ -16,6 +16,7 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Octicons from "react-native-vector-icons/Octicons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
+import CustomSidebarMenu from "../Navigation/CustomSideBar";
 
 
 
@@ -25,7 +26,8 @@ export default function AppNavigation() {
     return (
         <NavigationContainer>
             <Drawer.Navigator initialRouteName="bachonkiNamaz"
-            >
+                drawerContent={(props) => <CustomSidebarMenu {...props} />}>
+
 
                 <Drawer.Screen name='bachonkiNamaz' component={Home}
                     options={{
@@ -61,14 +63,6 @@ export default function AppNavigation() {
                         title: "About Seeraht",
                         drawerIcon: () => (
                             <MaterialIcons name="info" color="#1d5968" size={18}
-                            />
-                        ),
-                    }} />
-                <Drawer.Screen name='download' component={Download}
-                    options={{
-                        title: "Download",
-                        drawerIcon: () => (
-                            <MaterialIcons name="menu-book" color="#1d5968" size={18}
                             />
                         ),
                     }} />
