@@ -16,7 +16,8 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Octicons from "react-native-vector-icons/Octicons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
-import CustomSidebarMenu from "../Navigation/CustomSideBar";
+import CustomSidebarMenu from "./CustomSideBar";
+// import CustomSiderbarMenu from './CustomSideBar'
 
 
 const Drawer = createDrawerNavigator();
@@ -34,6 +35,7 @@ export default function AppNavigation() {
                         fontsize: 15,
                     },
                 }}
+                drawerContent={(props) => <CustomSidebarMenu {...props} />}
             >
                 <Drawer.Screen name='Home' component={Home}
                     options={{
