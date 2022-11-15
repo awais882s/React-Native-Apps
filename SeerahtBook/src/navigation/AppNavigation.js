@@ -2,7 +2,6 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import Home from '../Frontend/Home/Home'
-import Download from '../Frontend/Download/Download'
 import Feedback from '../Frontend/Feedback/Feedback'
 import MoreApps from '../Frontend/MoreApps/MoreApps'
 import Share from '../Frontend/Share/Share'
@@ -12,11 +11,11 @@ import DownloadCourse from '../Frontend/DownloadCourse/DownloadCourse'
 import ConnectWithSeeraht from '../Frontend/ConnectWithSeeraht/ConnectWithSeeraht'
 import AboutSeeraht from '../Frontend/AboutSeeraht/AboutUs'
 import HelpSeeraht from '../Frontend/HelpSeeraht/HelpSeeraht'
+
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Octicons from "react-native-vector-icons/Octicons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
-
 
 
 const Drawer = createDrawerNavigator();
@@ -24,10 +23,10 @@ const Drawer = createDrawerNavigator();
 export default function AppNavigation() {
     return (
         <NavigationContainer>
-            <Drawer.Navigator initialRouteName="bachonkiNamaz"
+            <Drawer.Navigator initialRouteName="Home"
             >
 
-                <Drawer.Screen name='bachonkiNamaz' component={Home}
+                <Drawer.Screen name='Home' component={Home}
                     options={{
                         headerTitle: "بچیوں کی نماز",
                         headerTitleAlign: "center",
@@ -39,7 +38,7 @@ export default function AppNavigation() {
                     }}
 
                 />
-                <Drawer.Screen name='buyNow' component={BuyNow}
+                <Drawer.Screen name='BuyNow' component={BuyNow}
                     options={{
                         title: "Buy Now",
                         drawerIcon: () => (
@@ -48,7 +47,7 @@ export default function AppNavigation() {
                         ),
                     }}
                 />
-                <Drawer.Screen name='connectWithSeeraht' component={ConnectWithSeeraht}
+                <Drawer.Screen name='ConnectWithSeeraht' component={ConnectWithSeeraht}
                     options={{
                         title: "Connect With Seeraht",
                         drawerIcon: () => (
@@ -56,7 +55,7 @@ export default function AppNavigation() {
                             />
                         ),
                     }} />
-                <Drawer.Screen name='aboutSeeraht' component={AboutSeeraht}
+                <Drawer.Screen name='AboutUs' component={AboutSeeraht}
                     options={{
                         title: "About Seeraht",
                         drawerIcon: () => (
@@ -64,15 +63,7 @@ export default function AppNavigation() {
                             />
                         ),
                     }} />
-                <Drawer.Screen name='download' component={Download}
-                    options={{
-                        title: "Download",
-                        drawerIcon: () => (
-                            <MaterialIcons name="menu-book" color="#1d5968" size={18}
-                            />
-                        ),
-                    }} />
-                <Drawer.Screen name='helpSeeraht' component={HelpSeeraht}
+                <Drawer.Screen name='HelpSeeraht' component={HelpSeeraht}
                     options={{
                         title: "Help Seeraht",
                         drawerIcon: () => (
@@ -80,7 +71,7 @@ export default function AppNavigation() {
                             />
                         ),
                     }} />
-                <Drawer.Screen name='moreApps' component={MoreApps}
+                <Drawer.Screen name='MoreApps' component={MoreApps}
                     options={{
                         title: "More Apps",
                         drawerIcon: () => (
@@ -96,7 +87,7 @@ export default function AppNavigation() {
                             />
                         ),
                     }} />
-                <Drawer.Screen name='share' component={Share}
+                <Drawer.Screen name='Share' component={Share}
                     options={{
                         title: "Share",
                         drawerIcon: () => (
@@ -104,7 +95,7 @@ export default function AppNavigation() {
                             />
                         ),
                     }} />
-                <Drawer.Screen name='submitFeedback' component={Feedback}
+                <Drawer.Screen name='Feedback' component={Feedback}
                     options={{
                         title: "Submit Feedback",
                         drawerIcon: () => (
@@ -112,7 +103,7 @@ export default function AppNavigation() {
                             />
                         ),
                     }} />
-                <Drawer.Screen name='downloadCourse' component={DownloadCourse}
+                <Drawer.Screen name='DownloadCourse' component={DownloadCourse}
                     options={{
                         title: "Download Course",
                         drawerIcon: () => (
