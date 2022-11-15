@@ -11,13 +11,11 @@ import DownloadCourse from '../Frontend/DownloadCourse/DownloadCourse'
 import ConnectWithSeeraht from '../Frontend/ConnectWithSeeraht/ConnectWithSeeraht'
 import AboutSeeraht from '../Frontend/AboutSeeraht/AboutUs'
 import HelpSeeraht from '../Frontend/HelpSeeraht/HelpSeeraht'
-
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Octicons from "react-native-vector-icons/Octicons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
 import CustomSidebarMenu from "./CustomSideBar";
-
 
 const Drawer = createDrawerNavigator();
 
@@ -36,6 +34,7 @@ export default function AppNavigation() {
                 }}
                 drawerContent={(props) => <CustomSidebarMenu {...props} />}
             >
+
                 <Drawer.Screen name='Home' component={Home}
                     options={{
                         headerTitle: "بچیوں کی نماز",
