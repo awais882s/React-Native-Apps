@@ -17,7 +17,6 @@ import Octicons from "react-native-vector-icons/Octicons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
 import CustomSidebarMenu from "./CustomSideBar";
-// import CustomSiderbarMenu from './CustomSideBar'
 
 
 const Drawer = createDrawerNavigator();
@@ -27,7 +26,7 @@ export default function AppNavigation() {
         <NavigationContainer>
             <Drawer.Navigator initialRouteName="Home"
                 screenOptions={{
-                    drawerActiveBackgroundColor: "#1D5968",
+                    drawerActiveBackgroundColor: "#9E1f63",
                     drawerActiveTintColor: "#fff",
                     drawerInactiveColor: "#000",
                     drawerLabelStyle: {
@@ -43,7 +42,7 @@ export default function AppNavigation() {
                         headerTitleAlign: "center",
                         title: "Bachon Ki Namaz",
                         headerStyle: {
-                            backgroundColor: "#1D5968"
+                            backgroundColor: "#9e1f63"
                         },
                         headerTintColor: "#fff",
                         headerTitleStyle: {
@@ -60,7 +59,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Buy Now",
                         headerStyle: {
-                            backgroundColor: "#1D5968"
+                            backgroundColor: "#9e1f63"
                         },
                         headerTintColor: "#fff",
                         headerTitleStyle: {
@@ -76,7 +75,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Connect With Seeraht",
                         headerStyle: {
-                            backgroundColor: "#1D5968"
+                            backgroundColor: "#9e1f63"
                         },
                         headerTintColor: "#fff",
                         headerTitleStyle: {
@@ -91,7 +90,7 @@ export default function AppNavigation() {
                     options={{
                         title: "About Seeraht",
                         headerStyle: {
-                            backgroundColor: "#1D5968"
+                            backgroundColor: "#9e1f63"
                         },
                         headerTintColor: "#fff",
                         headerTitleStyle: {
@@ -106,7 +105,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Help Seeraht",
                         headerStyle: {
-                            backgroundColor: "#1D5968"
+                            backgroundColor: "#9e1f63"
                         },
                         headerTintColor: "#fff",
                         headerTitleStyle: {
@@ -121,7 +120,7 @@ export default function AppNavigation() {
                     options={{
                         title: "More Apps",
                         headerStyle: {
-                            backgroundColor: "#1D5968"
+                            backgroundColor: "#9e1f63"
                         },
                         headerTintColor: "#fff",
                         headerTitleStyle: {
@@ -136,7 +135,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Subscribe For WhatsApp",
                         headerStyle: {
-                            backgroundColor: "#1D5968"
+                            backgroundColor: "#9e1f63"
                         },
                         headerTintColor: "#fff",
                         headerTitleStyle: {
@@ -151,7 +150,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Share",
                         headerStyle: {
-                            backgroundColor: "#1D5968"
+                            backgroundColor: "#9e1f63"
                         },
                         headerTintColor: "#fff",
                         headerTitleStyle: {
@@ -166,7 +165,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Submit Feedback",
                         headerStyle: {
-                            backgroundColor: "#1D5968"
+                            backgroundColor: "#9e1f63"
                         },
                         headerTintColor: "#fff",
                         headerTitleStyle: {
@@ -181,7 +180,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Download Course",
                         headerStyle: {
-                            backgroundColor: "#1D5968"
+                            backgroundColor: "#9e1f63"
                         },
                         headerTintColor: "#fff",
                         headerTitleStyle: {

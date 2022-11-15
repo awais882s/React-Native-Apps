@@ -14,7 +14,7 @@ const CustomSidebarMenu = (props) => {
     <View style={{ flex: 1 }}>
       <DrawerContentScrollView {...props} >
         <ImageBackground>
-          <Image source={{ uri: "https://res.cloudinary.com/seeraht/image/upload/v1668494789/public/Seeraht-01_y6jxqv.png" }} style={{ height: 130, resizeMode: "contain" }}>
+          <Image source={{ uri: "https://res.cloudinary.com/seeraht/image/upload/v1668494789/public/Seeraht-01_y6jxqv.png" }} style={{ height: 130, resizeMode: "contain", }}>
 
           </Image>
         </ImageBackground>
