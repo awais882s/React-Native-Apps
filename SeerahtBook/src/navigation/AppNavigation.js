@@ -24,15 +24,24 @@ export default function AppNavigation() {
     return (
         <NavigationContainer>
             <Drawer.Navigator initialRouteName="Home"
+                screenOptions={{
+                    // headerShown: false,
+                    drawerActiveBackgroundColor: "#1D5968",
+                    drawerActiveTintColor: "#fff",
+                    drawerInactiveColor:"#333",
+                    drawerLabelStyle: {
+                        marginLeft: -25,
+                        fontsize: 15,
+                    }
+                }}
             >
-
                 <Drawer.Screen name='Home' component={Home}
                     options={{
                         headerTitle: "بچیوں کی نماز",
                         headerTitleAlign: "center",
                         title: "Bachon Ki Namaz",
                         drawerIcon: () => (
-                            <MaterialIcons name="menu-book" color="#1d5968" size={18}
+                            <MaterialIcons name="menu-book"  size={20}
                             />
                         ),
                     }}
@@ -42,7 +51,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Buy Now",
                         drawerIcon: () => (
-                            <MaterialIcons name="shopping-cart" color="#1d5968" size={18}
+                            <MaterialIcons name="shopping-cart"  size={20}
                             />
                         ),
                     }}
@@ -51,7 +60,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Connect With Seeraht",
                         drawerIcon: () => (
-                            <Octicons name="link" color="#1d5968" size={18}
+                            <Octicons name="link"  size={20}
                             />
                         ),
                     }} />
@@ -59,7 +68,7 @@ export default function AppNavigation() {
                     options={{
                         title: "About Seeraht",
                         drawerIcon: () => (
-                            <MaterialIcons name="info" color="#1d5968" size={18}
+                            <MaterialIcons name="info"  size={20}
                             />
                         ),
                     }} />
@@ -67,7 +76,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Help Seeraht",
                         drawerIcon: () => (
-                            <FontAwesome5 name="hands-helping" color="#1d5968" size={18}
+                            <FontAwesome5 name="hands-helping"  size={20}
                             />
                         ),
                     }} />
@@ -75,7 +84,7 @@ export default function AppNavigation() {
                     options={{
                         title: "More Apps",
                         drawerIcon: () => (
-                            <FontAwesome5Pro name="google-play" color="#1d5968" size={18}
+                            <FontAwesome5Pro name="google-play"  size={20}
                             />
                         ),
                     }} />
@@ -83,7 +92,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Subscribe For WhatsApp",
                         drawerIcon: () => (
-                            <FontAwesome5Pro name="whatsapp" color="#1d5968" size={18}
+                            <FontAwesome5Pro name="whatsapp"  size={20}
                             />
                         ),
                     }} />
@@ -91,7 +100,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Share",
                         drawerIcon: () => (
-                            <FontAwesome5 name="share-alt" color="#1d5968" size={18}
+                            <FontAwesome5 name="share-alt"  size={20}
                             />
                         ),
                     }} />
@@ -99,7 +108,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Submit Feedback",
                         drawerIcon: () => (
-                            <MaterialIcons name="feedback" color="#1d5968" size={18}
+                            <MaterialIcons name="feedback"  size={20}
                             />
                         ),
                     }} />
@@ -107,7 +116,7 @@ export default function AppNavigation() {
                     options={{
                         title: "Download Course",
                         drawerIcon: () => (
-                            <FontAwesome5 name="file-download" color="#1d5968" size={18}
+                            <FontAwesome5 name="file-download" size={20}
                             />
                         ),
                     }} />
