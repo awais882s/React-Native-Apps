@@ -25,14 +25,13 @@ export default function AppNavigation() {
         <NavigationContainer>
             <Drawer.Navigator initialRouteName="Home"
                 screenOptions={{
-                    // headerShown: false,
                     drawerActiveBackgroundColor: "#1D5968",
                     drawerActiveTintColor: "#fff",
-                    drawerInactiveColor:"#333",
+                    drawerInactiveColor: "#000",
                     drawerLabelStyle: {
                         marginLeft: -25,
                         fontsize: 15,
-                    }
+                    },
                 }}
             >
                 <Drawer.Screen name='Home' component={Home}
@@ -40,18 +39,32 @@ export default function AppNavigation() {
                         headerTitle: "بچیوں کی نماز",
                         headerTitleAlign: "center",
                         title: "Bachon Ki Namaz",
-                        drawerIcon: () => (
-                            <MaterialIcons name="menu-book"  size={20}
+                        headerStyle: {
+                            backgroundColor: "#1D5968"
+                        },
+                        headerTintColor: "#fff",
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+
+                        drawerIcon: ({ color }) => (
+                            <MaterialIcons name="menu-book" color={color} size={20}
                             />
                         ),
                     }}
-
                 />
                 <Drawer.Screen name='BuyNow' component={BuyNow}
                     options={{
                         title: "Buy Now",
-                        drawerIcon: () => (
-                            <MaterialIcons name="shopping-cart"  size={20}
+                        headerStyle: {
+                            backgroundColor: "#1D5968"
+                        },
+                        headerTintColor: "#fff",
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                        drawerIcon: ({ color }) => (
+                            <MaterialIcons name="shopping-cart" color={color} size={20}
                             />
                         ),
                     }}
@@ -59,64 +72,120 @@ export default function AppNavigation() {
                 <Drawer.Screen name='ConnectWithSeeraht' component={ConnectWithSeeraht}
                     options={{
                         title: "Connect With Seeraht",
-                        drawerIcon: () => (
-                            <Octicons name="link"  size={20}
+                        headerStyle: {
+                            backgroundColor: "#1D5968"
+                        },
+                        headerTintColor: "#fff",
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                        drawerIcon: ({ color }) => (
+                            <Octicons name="link" color={color} size={20}
                             />
                         ),
                     }} />
                 <Drawer.Screen name='AboutUs' component={AboutSeeraht}
                     options={{
                         title: "About Seeraht",
-                        drawerIcon: () => (
-                            <MaterialIcons name="info"  size={20}
+                        headerStyle: {
+                            backgroundColor: "#1D5968"
+                        },
+                        headerTintColor: "#fff",
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                        drawerIcon: ({ color }) => (
+                            <MaterialIcons name="info" color={color} size={20}
                             />
                         ),
                     }} />
                 <Drawer.Screen name='HelpSeeraht' component={HelpSeeraht}
                     options={{
                         title: "Help Seeraht",
-                        drawerIcon: () => (
-                            <FontAwesome5 name="hands-helping"  size={20}
+                        headerStyle: {
+                            backgroundColor: "#1D5968"
+                        },
+                        headerTintColor: "#fff",
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                        drawerIcon: ({ color }) => (
+                            <FontAwesome5 name="hands-helping" color={color} size={20}
                             />
                         ),
                     }} />
                 <Drawer.Screen name='MoreApps' component={MoreApps}
                     options={{
                         title: "More Apps",
-                        drawerIcon: () => (
-                            <FontAwesome5Pro name="google-play"  size={20}
+                        headerStyle: {
+                            backgroundColor: "#1D5968"
+                        },
+                        headerTintColor: "#fff",
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                        drawerIcon: ({ color }) => (
+                            <FontAwesome5Pro name="google-play" color={color} size={20}
                             />
                         ),
                     }} />
                 <Drawer.Screen name='subscribeForWhatsApp' component={Subscribes}
                     options={{
                         title: "Subscribe For WhatsApp",
-                        drawerIcon: () => (
-                            <FontAwesome5Pro name="whatsapp"  size={20}
+                        headerStyle: {
+                            backgroundColor: "#1D5968"
+                        },
+                        headerTintColor: "#fff",
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                        drawerIcon: ({ color }) => (
+                            <FontAwesome5Pro name="whatsapp" color={color} size={20}
                             />
                         ),
                     }} />
                 <Drawer.Screen name='Share' component={Share}
                     options={{
                         title: "Share",
-                        drawerIcon: () => (
-                            <FontAwesome5 name="share-alt"  size={20}
+                        headerStyle: {
+                            backgroundColor: "#1D5968"
+                        },
+                        headerTintColor: "#fff",
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                        drawerIcon: ({ color }) => (
+                            <FontAwesome5 name="share-alt" color={color} size={20}
                             />
                         ),
                     }} />
                 <Drawer.Screen name='Feedback' component={Feedback}
                     options={{
                         title: "Submit Feedback",
-                        drawerIcon: () => (
-                            <MaterialIcons name="feedback"  size={20}
+                        headerStyle: {
+                            backgroundColor: "#1D5968"
+                        },
+                        headerTintColor: "#fff",
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                        drawerIcon: ({ color }) => (
+                            <MaterialIcons name="feedback" color={color} size={20}
                             />
                         ),
                     }} />
                 <Drawer.Screen name='DownloadCourse' component={DownloadCourse}
                     options={{
                         title: "Download Course",
-                        drawerIcon: () => (
-                            <FontAwesome5 name="file-download" size={20}
+                        headerStyle: {
+                            backgroundColor: "#1D5968"
+                        },
+                        headerTintColor: "#fff",
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                        drawerIcon: ({ color }) => (
+                            <FontAwesome5 name="file-download" color={color} size={20}
                             />
                         ),
                     }} />
