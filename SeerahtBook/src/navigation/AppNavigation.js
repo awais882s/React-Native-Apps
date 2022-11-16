@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-import { createDrawerNavigator } from '@react-navigation/drawer'
+import { createDrawerNavigator, DrawerItem } from '@react-navigation/drawer'
 import Home from '../Frontend/Home/Home'
 import Feedback from '../Frontend/Feedback/Feedback'
 import MoreApps from '../Frontend/MoreApps/MoreApps'
@@ -16,7 +16,7 @@ import Octicons from "react-native-vector-icons/Octicons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
 import CustomSidebarMenu from "./CustomSideBar";
-
+import { Linking, StyleSheet, TouchableOpacity } from 'react-native'
 const Drawer = createDrawerNavigator();
 
 export default function AppNavigation() {
@@ -46,6 +46,8 @@ export default function AppNavigation() {
                         headerTintColor: "#fff",
                         headerTitleStyle: {
                             fontWeight: 'bold',
+                        }, drawerLabelStyle: {
+                            marginLeft: 1
                         },
 
                         drawerIcon: ({ color }) => (
@@ -64,6 +66,9 @@ export default function AppNavigation() {
                         headerTitleStyle: {
                             fontWeight: 'bold',
                         },
+                        drawerLabelStyle: {
+                            marginLeft: 1
+                        },
                         drawerIcon: ({ color }) => (
                             <MaterialIcons name="shopping-cart" color={color} size={20}
                             />
@@ -79,6 +84,8 @@ export default function AppNavigation() {
                         headerTintColor: "#fff",
                         headerTitleStyle: {
                             fontWeight: 'bold',
+                        }, drawerLabelStyle: {
+                            marginLeft: 1
                         },
                         drawerIcon: ({ color }) => (
                             <Octicons name="link" color={color} size={20}
@@ -94,6 +101,8 @@ export default function AppNavigation() {
                         headerTintColor: "#fff",
                         headerTitleStyle: {
                             fontWeight: 'bold',
+                        }, drawerLabelStyle: {
+                            marginLeft: 1
                         },
                         drawerIcon: ({ color }) => (
                             <MaterialIcons name="info" color={color} size={20}
@@ -109,6 +118,8 @@ export default function AppNavigation() {
                         headerTintColor: "#fff",
                         headerTitleStyle: {
                             fontWeight: 'bold',
+                        }, drawerLabelStyle: {
+                            marginLeft: 1
                         },
                         drawerIcon: ({ color }) => (
                             <FontAwesome5 name="hands-helping" color={color} size={20}
@@ -124,6 +135,8 @@ export default function AppNavigation() {
                         headerTintColor: "#fff",
                         headerTitleStyle: {
                             fontWeight: 'bold',
+                        }, drawerLabelStyle: {
+                            marginLeft: 1
                         },
                         drawerIcon: ({ color }) => (
                             <FontAwesome5Pro name="google-play" color={color} size={20}
@@ -139,22 +152,27 @@ export default function AppNavigation() {
                         headerTintColor: "#fff",
                         headerTitleStyle: {
                             fontWeight: 'bold',
+                        }, drawerLabelStyle: {
+                            marginLeft: 1
                         },
                         drawerIcon: ({ color }) => (
                             <FontAwesome5Pro name="whatsapp" color={color} size={20}
                             />
                         ),
                     }} />
-                <Drawer.Screen name='Share' component={Share}
+                {/* <Drawer.Screen name='Share' component={Share}
+                  
 
                     options={{
                         title: "Share",
                         headerStyle: {
-                            backgroundColor: "#9e1f63"
+                            backgroundColor: "#9e1f63",
+
                         },
                         headerTintColor: "#fff",
                         headerTitleStyle: {
                             fontWeight: 'bold',
+
                         },
                         drawerIcon: ({ color }) => (
                             <FontAwesome5 name="share-alt" color={color} size={20}
@@ -165,6 +183,7 @@ export default function AppNavigation() {
                     }}
 
                 />
+
                 <Drawer.Screen name='Feedback' component={Feedback}
                     options={{
                         title: "Submit Feedback",
@@ -176,13 +195,19 @@ export default function AppNavigation() {
                             fontWeight: 'bold',
                         },
                         drawerIcon: ({ color }) => (
+
                             <MaterialIcons name="feedback" color={color} size={20}
+                                onPress={() => { Linking.openURL("https://play.google.com/store/apps/details?id=com.example.app") }}
                             />
+
                         ),
-                    }} 
-                    
-                    />
+                    }}
+
+
+                />
+
                 <Drawer.Screen name='DownloadCourse' component={DownloadCourse}
+
                     options={{
                         title: "Download Course",
                         headerStyle: {
@@ -196,9 +221,15 @@ export default function AppNavigation() {
                             <FontAwesome5 name="file-download" color={color} size={20}
                             />
                         ),
-                    }} />
+                    }} /> */}
 
             </Drawer.Navigator>
         </NavigationContainer>
     )
 }
+
+const styles = StyleSheet.create({
+    size: {
+        marginLeft: 5
+    }
+})

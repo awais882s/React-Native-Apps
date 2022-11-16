@@ -1,9 +1,10 @@
+import { View, Text } from 'react-native'
 import React from 'react'
-import { Linking } from 'react-native'
-export default Share = () => {
+
+export default function Share() {
     return (
-
-        Linking.openURL("http://play.google.com/store/apps/details?id=com.seeraht.khatm_e_nabuwwat_course")
-
+        <View>
+            <Text>Share</Text>
+        </View>
     )
 }
