@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
-import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+import { Image, ScrollView, TouchableOpacity, View } from 'react-native';
+import { Card, } from 'react-native-paper';
 import Book from "../../Assest/Books/1.jpg"
 import Book1 from "../../Assest/Books/2.jpeg"
 import Book3 from "../../Assest/Books/3.jpeg"
