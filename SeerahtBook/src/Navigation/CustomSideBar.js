@@ -44,11 +44,10 @@ const CustomSidebarMenu = (props) => {
     <View style={{ flex: 1 }}>
       <DrawerContentScrollView {...props} >
         <ImageBackground>
-          <Image source={{ uri: "https://res.cloudinary.com/dtzcvsa8l/image/upload/v1668507787/Seeraht/Seerahtlogo_1_pglubl.jpg" }} style={{ height: 130, resizeMode: "contain", }}>
-
+          <Image source={{ uri: "https://res.cloudinary.com/dtzcvsa8l/image/upload/v1668507787/Seeraht/Seerahtlogo_1_pglubl.jpg" }} style={{ height: 140, resizeMode: 'cover', }} >
           </Image>
-
         </ImageBackground>
+        <View style={{ borderBottomWidth: 1, borderColor: "#bdbdbd", marginVertical: 7 }}></View>
         <DrawerItemList {...props} />
         <DrawerItem
           icon={(color) => (
