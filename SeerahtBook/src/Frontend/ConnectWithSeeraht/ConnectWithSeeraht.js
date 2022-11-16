@@ -1,152 +1,124 @@
 import React from 'react'
-import { View, Text, StyleSheet, ScrollView, Image } from 'react-native'
-import Faecebook from '../../Assest/Digitial/facebook.png'
-import Instagram from '../../Assest/Digitial/instagram.png'
-import Twitter from '../../Assest/Digitial/twitter.png'
-import Google from '../../Assest/Digitial/goolge.png'
-import Youtube from '../../Assest/Digitial/youtube.png'
-import Whatsapp from '../../Assest/Digitial/whatsapp.png'
-import Phone from '../../Assest/Digitial/phone.png'
+import { View, Text, StyleSheet, Image, Linking } from 'react-native'
 import { Button } from 'react-native-paper'
+import Facebook from "../../Assest/Digitial/facebook.png"
+import Google from "../../Assest/Digitial/goolge.png"
+import Instagram from "../../Assest/Digitial/instagram.png"
+import Twitter from "../../Assest/Digitial/twitter.png"
+import Youtube from "../../Assest/Digitial/youtube.png"
+// import Website from "../../Assest/Digitial/website.png"
+import Whatsapp from "../../Assest/Digitial/whatsapp.png"
+import Phone from "../../Assest/Digitial/phone.png"
+
+
 
 export default function ConnectWithSeeraht() {
     return (
-        <ScrollView>
-            <View style={Styles.facebook}>
+        <View style={Styles.container}>
+            <View style={Styles.Icon}>
                 <Button icon={() => (
                     <Image
-                        source={Faecebook}
-                        style={{ width: 40, height: 40, }}
+                        source={Facebook}
+                        style={{ width:25, height: 40, margin:0, marginTop:5}}
                     />
-                )}
-                    textColor='#000000' onPress={() => alert('Pressed')}
-                    style={{
-                        backgroundColor: "#4267B2",
-                        marginTop: 15,
-                        marginHorizontal: 45,
-                    }}
-                >
-                    <Text style={{ color: "white", fontSize: 15, }}>Contact with FaceBook</Text>
+                )}onPress={() => Linking.openURL("https://www.facebook.com/SEERAHT")}
+               
+                style={{
+                    paddingRight:10,
+                    marginRight:-25 ,
+                    marginLeft:10
+              }}
+              >
                 </Button>
-
-            </View>
-            <View style={Styles.facebook}>
                 <Button icon={() => (
                     <Image
                         source={Instagram}
-                        style={{ width: 40, height: 40 }}
+                        style={{ width:35, height: 40, marginTop:5 , }}
                     />
-                )}
-                    textColor='#000000' onPress={() => alert('Pressed')}
-                    style={{
-                        backgroundColor: "#F4002593",
-                        marginTop: 15,
-                        marginHorizontal: 45,
-                    }}
+                )} onPress={() => Linking.openURL('https://www.instagram.com/alSEERAHT/')}
+                style={{
+                    paddingRight:10,
+                      marginRight:-25 
+                }}
                 >
-                    <Text style={{ color: "white", fontSize: 15, }}> Contact With Instagram</Text>
                 </Button>
-            </View>
-            <View style={Styles.facebook}>
                 <Button icon={() => (
                     <Image
                         source={Twitter}
-                        style={{ width: 35, height: 35, }}
+                        style={{ width: 40, height: 40, marginTop:5 , }}
                     />
-                )}
-                    textColor='#F9F9F9' onPress={() => alert('Pressed')}
-                    style={{
-                        backgroundColor:"#1DA1F2",
-                        marginTop: 15,
-                        marginHorizontal: 45,
-                    }}
+                )} onPress={() => Linking.openURL('https://twitter.com/MuftiMustafaA?t=oTL37R10sA_gW1m_lx6hPg&s=09')}
+                style={{
+                    paddingRight:10,
+                    marginRight:-25 
+              }}
                 >
-                    <Text style={{ color: "#120101", fontSize: 15, }}> Contact With Twitter</Text>
                 </Button>
-            </View>
-            <View style={Styles.facebook}>
-                <Button icon={() => (
-                    <Image
-                        source={Google}
-                        style={{ width: 35, height: 35, }}
-                    />
-                )}
-                    textColor='#F9F9F9' onPress={() => alert('Pressed')}
-                    style={{
-                        backgroundColor:"#0F9D58",
-                        marginTop: 15,
-                        marginHorizontal: 45,
-                    }}
-                >
-                    <Text style={{ color: "#120101", fontSize: 15, }}> Contact With Chrome</Text>
-                </Button>
-            </View>
-            <View style={Styles.facebook}>
                 <Button icon={() => (
                     <Image
                         source={Youtube}
-                        style={{ width: 35, height:40, }}
+                        style={{ width:40, height: 50, marginTop:5 ,}}
                     />
-                )}
-                    textColor='#F9F9F9' onPress={() => alert('Pressed')}
-                    style={{
-                          backgroundColor:"#FF000098",
-                        marginTop: 15,
-                        marginHorizontal: 45,
-                    }}
+                )} onPress={() => Linking.openURL("https://youtube.com/c/MuftiMustafaAziz")}
+                style={{
+                    padding:0,
+                    marginRight:-20,
+                    marginLeft:-10 
+              }}
                 >
-                    <Text style={{ color: "#F3F3F3", fontSize: 15, }}> Contact With YouTube</Text>
                 </Button>
-            </View>
-            <View style={Styles.facebook}>
+                <Button icon={() => (
+                    <Image
+                        source={Google}
+                        style={{ width: 35, height: 40, marginTop:5 , }}
+                    />
+                )} onPress={() => Linking.openURL("https://seeraht.com/")}
+                style={{
+                    padding:0,
+                    marginRight:-15 
+              }}
+                >
+                </Button>
                 <Button icon={() => (
                     <Image
                         source={Whatsapp}
-                        style={{ width: 30, height:30, }}
+                        style={{ width: 30, height: 40, marginTop:5  }}
                     />
-                )}
-                    textColor='#F9F9F9' onPress={() => alert('Pressed')}
-                    style={{
-                        backgroundColor:"#25D366",
-                        marginTop: 15,
-                        marginHorizontal: 45,
-                    }}
+                )} onPress={() => alert('Pressed')}
+                style={{
+                    padding:0,
+                    marginRight:-15 
+              }}
                 >
-                    <Text style={{ color: "#330505", fontSize: 15, }}> Contact With Whatsapp</Text>
                 </Button>
-            </View>
-            <View style={Styles.facebook}>
                 <Button icon={() => (
                     <Image
                         source={Phone}
-                        style={{ width: 30, height:30,  }}
+                        style={{ width: 30, height: 40, marginTop:5 , }}
                     />
-                )}
-                    textColor='#F9F9F9' onPress={() => alert('Pressed')}
-                    style={{
-                        backgroundColor: "#10CCED",
-                        marginTop: 15,
-                        marginHorizontal: 45,
-                    }}
-                >
-                    <Text style={{ color: "#000000", fontSize: 15, }}> Contact With Phone</Text>
+                )} onPress={() => alert('Pressed')}
+                style={{
+                    padding:0,
+                    marginRight:-10 
+              }}
+               >
                 </Button>
             </View>
-        </ScrollView >
+        </View>
     )
 }
 
 const Styles = StyleSheet.create({
-    facebook: {
-        textAlign: "center",
+    container: {
+        flex: 1
     },
-    fb: {
-        fontSize: 20,
-        color: "Black",
-        marginTop: 10,
-        backgroundColor: "#CFCACA87",
-        padding: 5,
-        textAlign: "center"
+    Icon: {
+    //    display:"flex",
+       flexDirection:"row",
+       borderBottomColor:"#0000005D",
+       marginTop:5,
+       borderBottomWidth:1,
+       backgroundColor:'White'
+    },
 
-    },
 })
