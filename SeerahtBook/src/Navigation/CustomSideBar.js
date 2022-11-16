@@ -1,22 +1,11 @@
 import React from 'react';
 import { DrawerContentScrollView, DrawerItem, DrawerItemList } from '@react-navigation/drawer';
-import {
-  View,
-  Image,
-  ImageBackground,
-  Linking,
-  Share,
-} from 'react-native';
+import { View, Image, ImageBackground, Linking, Share, } from 'react-native';
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import Logo from "../Assest/Seerahtlogo.jpg"
 
-
-
-
-
-
-
-
+// Share At Any Social Media 
 const onShare = async () => {
   try {
     const result = await Share.share({
@@ -36,9 +25,6 @@ const onShare = async () => {
     alert(error.message);
   }
 };
-
-
-
 const CustomSidebarMenu = (props) => {
   return (
     <View style={{ flex: 1 }}>
@@ -75,7 +61,7 @@ const CustomSidebarMenu = (props) => {
         />
       </DrawerContentScrollView>
 
-    </View>
+    </View >
   );
 };
 export default CustomSidebarMenu;
