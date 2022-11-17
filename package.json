@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-native-webview": "^11.23.1"
+  }
+}

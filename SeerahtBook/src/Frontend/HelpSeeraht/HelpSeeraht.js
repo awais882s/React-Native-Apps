@@ -69,9 +69,9 @@ export default function HelpSeeraht() {
                 <Text style={{ color: "White", fontSize: 17 }}>Phone</Text>
               </Button>
             </View>
-            <Text style={{textAlign:"left",marginTop:20,color:"#000000D4",marginHorizontal:5}}><Text style={{fontWeight:"bold",color:"#000000"}}>Note:</Text>
-            Your donation can be used for any permissible,religious,
-            reformatory,welfare,well-wishing,and good purpose
+            <Text style={{ textAlign: "left", marginTop: 20, color: "#000000D4", marginHorizontal: 5 }}><Text style={{ fontWeight: "bold", color: "#000000" }}>Note:</Text>
+              Your donation can be used for any permissible,religious,
+              reformatory,welfare,well-wishing,and good purpose
             </Text>
           </View>
         </View>
