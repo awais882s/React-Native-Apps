@@ -3,10 +3,10 @@ import { View, StyleSheet, Linking, TouchableOpacity, Text } from 'react-native'
 import FontAwesome5Brands from 'react-native-vector-icons/FontAwesome5Pro'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { WebView } from 'react-native-webview';
-import { ActivityIndicator, MD2Colors } from 'react-native-paper';
+import { ActivityIndicator } from 'react-native-paper';
 
 export default function ConnectWithSeeraht() {
-    const [websiteUrl, setWebsiteUrl] = useState("");
+    const [websiteUrl, setWebsiteUrl] = useState("https://www.facebook.com/seeraht");
     const [loading, setLoading] = useState(false);
 
     // Global Function For Open Websites
