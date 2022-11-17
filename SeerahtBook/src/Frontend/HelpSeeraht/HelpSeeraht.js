@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, Text, ScrollView, StyleSheet } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, Linking } from 'react-native'
 import { Button } from 'react-native-paper'
 import FontAwesome5Brands from 'react-native-vector-icons/FontAwesome5Pro'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
@@ -12,7 +12,7 @@ export default function HelpSeeraht() {
     <ScrollView ScrollView >
       <View style={Styles.container}>
         <View>
-          <Text style={Styles.button} onPress={()=>setShow(!show)}>As Services</Text>
+          <Text style={Styles.button} onPress={() => setShow(!show)}>As Services</Text>
           {
             show ? (
               <View style={Styles.Content}>
@@ -38,7 +38,7 @@ export default function HelpSeeraht() {
               <Text style={Styles.Number}>JazzCash</Text>
               <Text style={Styles.Number}>0300 716 51 51</Text>
             </View> */}
-            <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 20, marginTop: 10, color: "#000000", }}>QUICK CONTACT FOR DONATION</Text>
+            <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 22, marginTop: 10, color: "#000000", }}>QUICK CONTACT FOR DONATION</Text>
 
             <Text style={{ color: "#000000", textAlign: 'center', paddingHorizontal: 10, marginTop: 5 }}>"Donate your money for the noble cause of propagating
               Islam via any of the following services"</Text>
@@ -47,10 +47,10 @@ export default function HelpSeeraht() {
               <Button icon={() => (
                 <FontAwesome5Brands
                   name='whatsapp'
-                  size={25}
+                  size={22}
                   color="#FFFFFF"
                 />
-              )} mode="contained" onPress={() => alert('Pressed')}
+              )} mode="contained" onPress={() => Linking.openURL("https://api.whatsapp.com/send?phone=923111772111&text=")}
                 style={{
                   backgroundColor: "#128c7e",
                   marginTop: 30,
@@ -58,25 +58,26 @@ export default function HelpSeeraht() {
                   paddingHorizontal: 10,
                 }}
               >
-                <Text style={{ color: "White", fontSize: 17 }}>Whatsapp</Text>
+                <Text style={{ color: "White", fontSize: 15 }}>WHATSAPP</Text>
               </Button>
               <Button icon={() => (
                 <MaterialCommunityIcons
                   name='phone'
-                  size={28}
+                  size={22}
                   color="#FFFFFF"
                 />
-              )} mode="contained" onPress={() => alert('Pressed')}
+              )} mode="contained" onPress={() => Linking.openURL("tel:+92-311-1772111")}
                 style={{
                   backgroundColor: "#5602FF",
                   marginTop: 30,
                   paddingHorizontal: 20,
+                  marginEnd: 15,
                 }}
               >
-                <Text style={{ color: "White", fontSize: 17 }}>Phone</Text>
+                <Text style={{ color: "White", fontSize: 15 }}>CALL</Text>
               </Button>
             </View>
-            <Text style={{ textAlign: "left", marginTop: 20, color: "#000000D4", marginHorizontal: 5 }}><Text style={{ fontWeight: "bold", color: "#000000" }}>Note:</Text>
+            <Text style={{ textAlign: "left", marginTop: 20, color: "#000000D4", marginHorizontal: 5, marginStart: 10 }}><Text style={{ fontWeight: "bold", color: "#000000" }}>Note:</Text>
               Your donation can be used for any permissible,religious,
               reformatory,welfare,well-wishing,and good purpose
             </Text>
