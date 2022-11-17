@@ -32,12 +32,9 @@ export default function HelpSeeraht() {
             <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 15, marginTop: 10, color: "#000000", }}>YOUR SEERAHT INSTITUTE NEEDS YOU</Text>
             <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 7 }}>
               <Text style={Styles.Contact}>Easypaisa & JazzCash</Text>
-              <Text style={Styles.Number}>0300 716 51 51</Text>
+              <Text style={Styles.Number}>0300 716 5151</Text>
             </View>
-            {/* <View style={{ flexDirection: "row",justifyContent:"center",marginTop:7 }}>
-              <Text style={Styles.Number}>JazzCash</Text>
-              <Text style={Styles.Number}>0300 716 51 51</Text>
-            </View> */}
+           
             <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 22, marginTop: 10, color: "#000000", }}>QUICK CONTACT FOR DONATION</Text>
 
             <Text style={{ color: "#000000", textAlign: 'center', paddingHorizontal: 10, marginTop: 5 }}>"Donate your money for the noble cause of propagating
@@ -77,9 +74,10 @@ export default function HelpSeeraht() {
                 <Text style={{ color: "White", fontSize: 15 }}>CALL</Text>
               </Button>
             </View>
-            <Text style={{ textAlign: "left", marginTop: 20, color: "#000000D4", marginHorizontal: 5, marginStart: 10 }}><Text style={{ fontWeight: "bold", color: "#000000" }}>Note:</Text>
-              Your donation can be used for any permissible,religious,
-              reformatory,welfare,well-wishing,and good purpose
+            <Text style={{ textAlign: "left", marginTop: 20, color: "#000000D4", marginStart: 10 }}><Text style={{ fontWeight: "bold", color: "#000000",}}>Note:</Text>
+            {/* Your donation can be used for any permissible,religious, */}
+            {/* reformatory,welfare,well-wishing,and good purpose */}
+            Your donation can be used for any permissible / religious / reformatory / welfare well-wishing and good purpose
             </Text>
           </View>
         </View>
@@ -117,3 +115,5 @@ const Styles = StyleSheet.create({
     paddingHorizontal: 15
   }
 })
+// Your donation can be used for any permissible,religious,
+//               reformatory,welfare,well-wishing,and good purpose
