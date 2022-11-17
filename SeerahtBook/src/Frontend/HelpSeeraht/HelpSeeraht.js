@@ -32,7 +32,7 @@ export default function HelpSeeraht() {
             <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 15, marginTop: 10, color: "#000000", }}>YOUR SEERAHT INSTITUTE NEEDS YOU</Text>
             <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 7 }}>
               <Text style={Styles.Contact}>Easypaisa & JazzCash</Text>
-              <Text style={Styles.Number}>0300 716 51 51</Text>
+              <Text style={Styles.Number}>0300 716 5151</Text>
             </View>
             {/* <View style={{ flexDirection: "row",justifyContent:"center",marginTop:7 }}>
               <Text style={Styles.Number}>JazzCash</Text>
