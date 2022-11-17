@@ -34,10 +34,7 @@ export default function HelpSeeraht() {
               <Text style={Styles.Contact}>Easypaisa & JazzCash</Text>
               <Text style={Styles.Number}>0300 716 5151</Text>
             </View>
-            {/* <View style={{ flexDirection: "row",justifyContent:"center",marginTop:7 }}>
-              <Text style={Styles.Number}>JazzCash</Text>
-              <Text style={Styles.Number}>0300 716 51 51</Text>
-            </View> */}
+           
             <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 22, marginTop: 10, color: "#000000", }}>QUICK CONTACT FOR DONATION</Text>
 
             <Text style={{ color: "#000000", textAlign: 'center', paddingHorizontal: 10, marginTop: 5 }}>"Donate your money for the noble cause of propagating
