@@ -109,9 +109,9 @@ const Styles = StyleSheet.create({
     },
     Icon: {
         flexDirection: "row",
-        borderBottomColor: "#0000005D",
+        borderBottomColor: "#e2e2e2",
         marginTop: 5,
-        borderBottomWidth: 1,
+        borderBottomWidth: 0.5,
         backgroundColor: 'White'
     },
 
