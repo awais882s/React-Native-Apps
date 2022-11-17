@@ -3,6 +3,7 @@ import { View, StyleSheet, Linking, TouchableOpacity, Text } from 'react-native'
 import FontAwesome5Brands from 'react-native-vector-icons/FontAwesome5Pro'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { WebView } from 'react-native-webview';
+import { ActivityIndicator, MD2Colors } from 'react-native-paper';
 
 export default function ConnectWithSeeraht() {
     const [websiteUrl, setWebsiteUrl] = useState("");
@@ -48,7 +49,7 @@ export default function ConnectWithSeeraht() {
                         color="#00acee"
                     />
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => openUrl("https://www.youtube.com/@SEERAHT")}
+                <TouchableOpacity onPress={() => Linking.openURL("https://www.youtube.com/@SEERAHT")}
 
                 >
                     <FontAwesome5Brands
@@ -92,8 +93,8 @@ export default function ConnectWithSeeraht() {
                 {
                     !loading ? ""
                         :
-                        <View style={{ height: 650, display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <Text>Loading...</Text>
+                        <View style={{ height: 700, display: "flex", justifyContent: "center", alignItems: "center" }}>
+                            <ActivityIndicator animating={true} color={"#9e1f63"} size={'large'} />
                         </View>
                 }
                 <WebView source={{ uri: `${websiteUrl}` }} onLoad={() => { setLoading(true) }} onLoadEnd={() => { setLoading(false) }} />
