@@ -16,7 +16,9 @@ import Octicons from "react-native-vector-icons/Octicons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
 import CustomSidebarMenu from "./CustomSideBar";
-import { Linking, StyleSheet, TouchableOpacity } from 'react-native'
+import {  StyleSheet } from 'react-native'
+
+
 const Drawer = createDrawerNavigator();
 
 export default function AppNavigation() {
