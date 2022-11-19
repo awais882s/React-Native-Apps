@@ -2,12 +2,13 @@ import React from 'react'
 import { View, Text, StyleSheet, ScrollView, Image } from 'react-native'
 import { Button } from 'react-native-paper'
 import Top from '../../Assest/11111.png'
+import BooksPage from '../BooksPage/BooksPage'
 
 export default function Home() {
   return (
     <>
       <View style={{
-        backgroundColor:"#DAD2D2"
+        backgroundColor: "#DAD2D2"
       }}>
         <Image
           source={Top}
@@ -20,6 +21,7 @@ export default function Home() {
         />
       </View>
       <ScrollView style={styles.Container}>
+        <BooksPage />
         <View>
           <View>
             <Button

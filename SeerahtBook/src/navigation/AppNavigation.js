@@ -16,7 +16,7 @@ import Octicons from "react-native-vector-icons/Octicons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
 import CustomSidebarMenu from "./CustomSideBar";
-import { Linking, StyleSheet, TouchableOpacity } from 'react-native'
+import { StyleSheet } from 'react-native'
 const Drawer = createDrawerNavigator();
 
 export default function AppNavigation() {
@@ -77,7 +77,7 @@ export default function AppNavigation() {
                 />
                 <Drawer.Screen name='ConnectWithSeeraht' component={ConnectWithSeeraht}
                     options={{
-                        headerTitle:"Digitial Seeraht",
+                        headerTitle: "Digitial Seeraht",
                         title: "Connect With Seeraht",
                         headerStyle: {
                             backgroundColor: "#9e1f63"
