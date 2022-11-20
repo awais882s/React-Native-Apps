@@ -3,7 +3,6 @@ import { DrawerContentScrollView, DrawerItem, DrawerItemList } from '@react-navi
 import { View, Image, ImageBackground, Linking, Share, } from 'react-native';
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
-import Logo from "../Assest/Seerahtlogo.jpg"
 
 // Share At Any Social Media 
 const onShare = async () => {

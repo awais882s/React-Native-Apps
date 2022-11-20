@@ -1,10 +1,18 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React, { createContext, useContext, useState } from 'react'
 
-export default function Context() {
+
+const AuthContext = createContext()
+
+export default function AuthContextProvider({ children }) {
+  // const [pageNo, setPageNo] = useState(1)
+  const [pageInfo, setPageInfo] = useState({ pageNo: 1, title: "" })
   return (
-    <View>
-      <Text>Context</Text>
-    </View>
+    <AuthContext.Provider value={{ pageInfo, setPageInfo }}>
+      {children}
+    </AuthContext.Provider>
   )
+}
+
+export const useAuthContext = () => {
+  return useContext(AuthContext)
 }
