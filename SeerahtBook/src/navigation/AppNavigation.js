@@ -22,7 +22,7 @@ const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator()
 
 const MyStack = () => {
-    const { pageInfo } = useAuthContext()
+    const { pageInfo } = useAuthContext();
     return (
         <Stack.Navigator>
             <Stack.Screen
@@ -63,7 +63,6 @@ const MyDrawer = () => {
             }}
             drawerContent={(props) => <CustomSidebarMenu {...props} />}
         >
-            {/* <Drawer.Screen name='Root' component={MyStack} /> */}
 
             <Drawer.Screen name='Home' component={Home}
                 options={{
@@ -202,9 +201,3 @@ export default function AppNavigation() {
         </NavigationContainer>
     )
 }
-
-// const styles = StyleSheet.create({
-//     size: {
-//         marginLeft: 5
-//     }
-// })

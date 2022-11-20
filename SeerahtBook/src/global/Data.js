@@ -1,7 +1,5 @@
 const MyButton = [
-    {
-        id: "0", title: "فہرست مضامین", page: 1
-    },
+    { id: "0", title: "فہرست مضامین", page: 1 },
     { id: "1", title: "ایمان مجمل", page: 4 },
     { id: "2", title: "ایمان مفصل", page: 5 },
     { id: "3", title: "اول کلمہ", page: 6 },

@@ -1,6 +1,4 @@
-
-
-export default function BooksPage() {
+export default BooksPage = () => {
     const source = require('../../Assest/pdfbook.pdf');
     return (
         <View style={styles.container}>
@@ -23,7 +21,7 @@ export default function BooksPage() {
                 style={styles.pdf} />
         </View>
     )
-  
+
 }
 
 

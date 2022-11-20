@@ -4,9 +4,8 @@ import { Button } from 'react-native-paper'
 import Top from '../../Assest/11111.png'
 import { useAuthContext } from '../../Context/Context'
 import { MyButton } from "../../global/Data"
-import Lesson1 from '../Book/Lesson1'
 
-export default function Home({ navigation }) {
+export default Home = ({ navigation }) => {
   const { setPageInfo } = useAuthContext()
   return (
     <>
@@ -36,23 +35,6 @@ export default function Home({ navigation }) {
             </View>
           ))
         }
-
-        {/* {
-            restaurantsData.map(item => (
-              <View key={item.id} style={{ paddingBottom: 20 }}>
-                <FoodCard
-                  screenWidth={SCREEN_WIDTH * 0.95}
-                  image={item.image}
-                  restaurantName={item.restaurantName}
-                  farAway={item.forAway}
-                  averageReview={item.averageReview}
-                  numberOfReview={item.numberOfReview}
-                  businessAddress={item.businessAddress}
-                />
-              </View>
-            ))
-          } */}
-
       </ScrollView>
     </>
   )
