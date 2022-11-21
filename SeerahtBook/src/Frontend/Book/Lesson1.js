@@ -17,7 +17,6 @@ export default Lesson1 = () => {
                 style={styles.pdf} />
         </View>
     )
-    // }
 }
 
 const styles = StyleSheet.create({
