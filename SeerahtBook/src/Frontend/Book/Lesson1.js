@@ -1,21 +1,19 @@
-import React, { useContext } from 'react';
-import { StyleSheet, Dimensions, View } from 'react-native';
+import React, { useContext, useState } from 'react';
+import { StyleSheet, Dimensions, View, Text } from 'react-native';
 import Pdf from 'react-native-pdf';
 import { useAuthContext } from '../../Context/Context';
 
-export default function Lesson1() {
-    // render() {
+export default Lesson1 = () => {
     let { pageInfo } = useAuthContext()
     const source = require('../../Assest/pdfbook.pdf');  // ios only
     return (
-        <View style={styles.container} >
+        <View style={styles.container}>
             <Pdf
                 page={pageInfo.pageNo}
                 singlePage={true}
                 trustAllCerts={false}
                 horizontal={true}
                 source={source}
-                maxScale={3.0}
                 style={styles.pdf} />
         </View>
     )
