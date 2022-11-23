@@ -56,7 +56,7 @@ const CustomSidebarMenu = (props) => {
             />
           )}
           label="Download Course"
-          onPress={() => Linking.openURL('https://firebasestorage.googleapis.com/v0/b/khatm-e-nabuwwat.appspot.com/o/Documents%2FBook%2FKhatm-e-Nabuwwat%20Course%20-%20Complete.pdf?alt=media&token=82f32628-e046-481d-bb50-24c6eb60b32f')}
+          onPress={() => Linking.openURL('https://drive.google.com/file/d/1tXYDzHuwdCYRUXw1uNToXxTKk9GJZo_v/view?usp=sharing')}
         />
       </DrawerContentScrollView>
 

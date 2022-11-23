@@ -1,9 +1,13 @@
 import React from 'react'
-import { View, Text, TextInput, StyleSheet } from 'react-native'
+import { View, Text, TextInput, StyleSheet, Linking } from 'react-native'
 import FontAwesome5Brands from 'react-native-vector-icons/FontAwesome5Pro'
 import { Button } from 'react-native-paper'
 
 export default function Subscribes() {
+  const whatsapp = () => {
+    Linking.openURL("https://api.whatsapp.com/send?phone=923111772111&text=Please%20add%20my%20number%20to%20your%20Whatsapp%20Broadcast%20List.")
+
+  }
   return (
     <View>
       <View>
@@ -27,7 +31,7 @@ export default function Subscribes() {
             marginTop: 10,
             marginBottom: 10
           }}
-          onPress={() => alert("Working")}
+          // onPress={() => alert("Working")}
         ><Text style={{ color: "#ffffff", fontSize: 18 }}>Subscribe</Text></Button>
 
         <Text style={{ textAlign: "center", color: "#06460F", fontSize: 20, fontWeight: "bold", marginVertical: 10 }}>OR</Text>
@@ -43,7 +47,7 @@ export default function Subscribes() {
             marginTop: 10,
             marginBottom: 10
           }}
-          onPress={() => alert("Working")}
+          onPress={whatsapp}
         ><Text style={{ color: "#ffffff", fontSize: 20 }}> Send Message <FontAwesome5Brands
           name='whatsapp'
           size={18}

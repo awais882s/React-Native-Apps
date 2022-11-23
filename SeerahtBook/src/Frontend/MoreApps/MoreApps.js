@@ -32,7 +32,6 @@ export default MyComponent = () => {
     );
   }
   return (
-
     <>
       <ScrollView>
         <View>
