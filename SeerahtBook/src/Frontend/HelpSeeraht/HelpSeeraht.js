@@ -6,6 +6,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import * as Animatable from "react-native-animatable"
 
 
+
 export default function HelpSeeraht() {
 
   return (

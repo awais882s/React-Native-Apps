@@ -1,12 +1,24 @@
 import React from 'react'
-import { View, Text, ScrollView, StyleSheet } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, Dimensions } from 'react-native'
+import Pdf from 'react-native-pdf';
 
 export default function AboutSeeraht() {
+
+  const source = require('../../Assest/pdfbook.pdf');
   return (
     <ScrollView>
       <View style={Styles.container}>
         <View>
           <Text style={Styles.button}>Mutfi Mustafa Aziz</Text>
+          <View style={Styles.PdfContainer}>
+            <Pdf
+              // page={pageInfo.pageNo}
+              singlePage={false}
+              trustAllCerts={false}
+              horizontal={true}
+              source={source}
+              style={Styles.pdf} />
+          </View>
         </View>
         <View>
           <Text style={Styles.button}>Seeraht Institute & Research Center</Text>
@@ -114,4 +126,41 @@ const Styles = StyleSheet.create({
     fontSize: 15,
     marginHorizontal: 7,
   },
+  PdfContainer: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    marginTop: 25,
+  },
+  pdf: {
+    flex: 1,
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
+  }
 })
+
+
+// import React, { useContext, useState } from 'react';
+// import { StyleSheet, Dimensions, View, Text } from 'react-native';
+// import Pdf from 'react-native-pdf';
+// import { useAuthContext } from '../../Context/Context';
+
+// export default Lesson1 = () => {
+//     let { pageInfo } = useAuthContext()
+//     const source = require('../../Assest/pdfbook.pdf');  // ios only
+//     return (
+//         <View style={styles.container}>
+//             <Pdf
+//                 page={pageInfo.pageNo}
+//                 singlePage={true}
+//                 trustAllCerts={false}
+//                 horizontal={true}
+//                 source={source}
+//                 style={styles.pdf} />
+//         </View>
+//     )
+// }
+
+// const styles = StyleSheet.create({
+//
+// });
