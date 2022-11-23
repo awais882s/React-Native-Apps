@@ -33,11 +33,16 @@ export default function HelpSeeraht() {
           <View>
             <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 18, marginTop: 15, color: "#000000", }}>السلام علیکم ورحمة الله وبركاته</Text>
             <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 15, marginTop: 10, color: "#000000", }}>YOUR SEERAHT INSTITUTE NEEDS YOU</Text>
+            <Text style={{
+              textAlign: "center", color: "#000000",
+              paddingVertical: 10
+            }}>Click to the number for copy</Text>
             <View style={{ flexDirection: "row", justifyContent: "center", marginTop: 7 }}>
+
               <Text style={Styles.Contact}>Easypaisa & JazzCash</Text>
-             <TouchableOpacity onPress={copyToClipboard}>
-             <Text style={Styles.Number}>0300 716 5151</Text>
-             </TouchableOpacity>
+              <TouchableOpacity onPress={copyToClipboard}>
+                <Text style={Styles.Number}>0300 716 5151</Text>
+              </TouchableOpacity>
             </View>
 
             <Text style={{ textAlign: "center", fontWeight: "bold", fontSize: 22, marginTop: 10, color: "#000000", }}>QUICK CONTACT FOR DONATION</Text>
