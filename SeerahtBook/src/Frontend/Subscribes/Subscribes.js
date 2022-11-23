@@ -25,13 +25,13 @@ export default function Subscribes() {
 
         <Button
           style={{
-            backgroundColor: "#14B124EA",
+            backgroundColor: "#ce629f",
             padding: 3,
             marginHorizontal: 20,
             marginTop: 10,
             marginBottom: 10
           }}
-          // onPress={() => alert("Working")}
+        // onPress={() => alert("Working")}
         ><Text style={{ color: "#ffffff", fontSize: 18 }}>Subscribe</Text></Button>
 
         <Text style={{ textAlign: "center", color: "#06460F", fontSize: 20, fontWeight: "bold", marginVertical: 10 }}>OR</Text>
@@ -41,7 +41,7 @@ export default function Subscribes() {
         </Text>
         <Button
           style={{
-            backgroundColor: "#234E27F0",
+            backgroundColor: "#25d366",
             padding: 3,
             marginHorizontal: 20,
             marginTop: 10,

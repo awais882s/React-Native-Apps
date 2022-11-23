@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
-import { Button } from 'react-native-paper'
-
+import { Button } from 'react-native-paper';
 export default function BuyNow() {
+
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text style={{ fontSize: 20, color: "black", marginLeft: 10 }}>Soory! The Bachon Ki Namaz Course isn't available for Sale right now.</Text>

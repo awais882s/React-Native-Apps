@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, ScrollView, StyleSheet, Linking, TouchableOpacity } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, Linking, TouchableOpacity, ToastAndroid } from 'react-native'
 import { Button } from 'react-native-paper'
 import FontAwesome5Brands from 'react-native-vector-icons/FontAwesome5Pro'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
@@ -12,6 +12,7 @@ export default function HelpSeeraht() {
 
   const copyToClipboard = () => {
     Clipboard.setString('0300 716 5151');
+    ToastAndroid.show("Number Copy to ClipBoard", ToastAndroid.SHORT);
   };
 
   return (
