@@ -4,8 +4,7 @@ import Pdf from 'react-native-pdf';
 
 export default function AboutSeeraht() {
 
-  const source = require('../../Assest/pdfbook.pdf');
-  // const source = { uri: 'http://samples.leanpub.com/thereactnativebook-sample.pdf', cache: true };
+  const source = { uri: "https://firebasestorage.googleapis.com/v0/b/seerahtlibrary.appspot.com/o/documents%2FAbout%20Mufti%20Mustafa%20Aziz.pdf?alt=media&token=dabdcd52-560e-4133-bc80-47c00e33669b", cache: true };
   return (
     <ScrollView>
       <View style={Styles.container}>
@@ -13,7 +12,7 @@ export default function AboutSeeraht() {
           <Text style={Styles.button}>Mutfi Mustafa Aziz</Text>
           <View style={Styles.PdfContainer}>
             <Pdf
-              singlePage={false}
+              enableRTL={true}
               trustAllCerts={false}
               horizontal={true}
               source={source}
@@ -136,5 +135,8 @@ const Styles = StyleSheet.create({
     flex: 1,
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').height,
+
+    flexDirection: "row",
+    justifyContent: "space-between"
   }
 })
