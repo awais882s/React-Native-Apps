@@ -12,7 +12,6 @@ export default Lesson1 = () => {
                 page={pageInfo.pageNo}
                 singlePage={true}
                 trustAllCerts={false}
-                horizontal={true}
                 source={source}
                 style={styles.pdf} />
         </View>

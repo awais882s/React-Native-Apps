@@ -28,7 +28,7 @@ export default Home = ({ navigation }) => {
           MyButton.map(item => (
             <View key={item.id}>
               <Button
-                onPress={() => { navigation.navigate('Lesson1'); setPageInfo({ title: item.title, pageNo: item.page }); console.log(item.page); }}
+                onPress={() => { navigation.navigate('Lesson1'); setPageInfo({ title: item.title, pageNo: item.page }) }}
                 style={styles.button}
               >
                 <Text style={styles.textbutton}>{item.title}</Text>
@@ -49,10 +49,10 @@ const styles = StyleSheet.create({
   button: {
     borderColor: "#9e1f63",
     backgroundColor: "#ffffff",
-    borderWidth: 1,
+    borderWidth: 2,
     borderRadius: 20,
     marginHorizontal: 30,
-    marginVertical: 5
+    marginVertical: 6
   },
   textbutton: {
     color: "#9e1f63"
