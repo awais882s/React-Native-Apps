@@ -38,7 +38,6 @@ const MyStack = () => {
                     },
                     headerTintColor: "#fff",
                     headerTitleStyle: {
-                        fontWeight: 'bold',
                         textAlign: "center",
                         justifyContent: "center"
                     },
@@ -93,7 +92,6 @@ const MyDrawer = () => {
                     },
                     headerTintColor: "#fff",
                     headerTitleStyle: {
-                        fontWeight: 'bold',
                     },
                     drawerLabelStyle: {
                         marginLeft: 1
@@ -113,7 +111,6 @@ const MyDrawer = () => {
                     },
                     headerTintColor: "#fff",
                     headerTitleStyle: {
-                        fontWeight: 'bold',
                     }, drawerLabelStyle: {
                         marginLeft: 1
                     },
@@ -130,7 +127,6 @@ const MyDrawer = () => {
                     },
                     headerTintColor: "#fff",
                     headerTitleStyle: {
-                        fontWeight: 'bold',
                     }, drawerLabelStyle: {
                         marginLeft: 1
                     },
@@ -147,7 +143,6 @@ const MyDrawer = () => {
                     },
                     headerTintColor: "#fff",
                     headerTitleStyle: {
-                        fontWeight: 'bold',
                     }, drawerLabelStyle: {
                         marginLeft: 1
                     },
@@ -164,7 +159,6 @@ const MyDrawer = () => {
                     },
                     headerTintColor: "#fff",
                     headerTitleStyle: {
-                        fontWeight: 'bold',
                     }, drawerLabelStyle: {
                         marginLeft: 1
                     },
@@ -181,7 +175,6 @@ const MyDrawer = () => {
                     },
                     headerTintColor: "#fff",
                     headerTitleStyle: {
-                        fontWeight: 'bold',
                     }, drawerLabelStyle: {
                         marginLeft: 1
                     },

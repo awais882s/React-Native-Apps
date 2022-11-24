@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Dimensions, View } from 'react-native';
-import { ProgressBar } from 'react-native-paper';
 import Pdf from 'react-native-pdf';
 import { useAuthContext } from '../../Context/Context';
 
